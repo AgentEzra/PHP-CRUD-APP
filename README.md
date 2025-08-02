@@ -1,2 +1,10 @@
 # PHP-CRUD-APP
-crud
+***CRUD :***
+- **C**reate
+- **R**ead
+- **U**pdate
+- **D**elete
+
+xampp
+db -> crud_app
+table -> user
