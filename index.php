@@ -37,7 +37,7 @@ $result = mysqli_query($connect, "SELECT * FROM user");
         </tr>
 
         <?php
-            $no = 1;
+            $no = 0;
             while ($row = mysqli_fetch_assoc($result)){
                 $no++;
             ?>
