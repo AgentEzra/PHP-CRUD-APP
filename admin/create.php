@@ -73,7 +73,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
       <div class="already">
         <p>Go Back 
-        <a href="index.php">to index?</a></p>
+        <a href="table.php">to index?</a></p>
       </div>
     </form>
   </div>

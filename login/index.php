@@ -12,7 +12,7 @@
 </head>
 <body>
   <div class="wrapper">
-    <form action="./backend/login.php" method="post">
+    <form method="post">
       <h1>Login</h1>
 
       <div class="input-box">
@@ -24,33 +24,24 @@
         <span id="togglePassword" class="eye-icon">&#128065;</span> -->
         <div class="input-box">
           <input type="password" id="password" name="password" placeholder="Password" required>
-          <span id="togglePassword" class="eye-icon">
-            <!-- Open Eye SVG -->
-            <svg id="eyeOpen" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24" style="display: inline;">
-              <path d="M12 4.5C6.5 4.5 2 9.5 2 12s4.5 7.5 10 7.5S22 14.5 22 12s-4.5-7.5-10-7.5zM12 17c-2.8 0-5-2.2-5-5s2.2-5 5-5 5 2.2 5 5-2.2 5-5 5zm0-8.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7z"/>
-            </svg>
-            <!-- Closed Eye SVG -->
-            <svg id="eyeClosed" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" style="display: none;">
-              <path d="M3 3l18 18M1.5 12s4.5-7.5 10.5-7.5 10.5 7.5 10.5 7.5-4.5 7.5-10.5 7.5-10.5-7.5-10.5-7.5zM12 9a3 3 0 0 1 3 3"/>
-            </svg>
-          </span>
+          
         </div> 
       </div>
     
       <div class="remfor">
         <label><input type="checkbox" name="remember"> Remember Me</label>
-        <a href="./pages/forgotpassword.html">Forgot Password?</a>
+        <a href="./forgotpassword.php">Forgot Password?</a>
       </div>
 
       <button type="submit" class="login-button">LOGIN</button>
 
       <div class="donthave">
         <p>Don't Have An Account?
-        <a href="./pages/registeraccount.html">Register</a></p>
+        <a href="./registeraccount.php">Register</a></p>
       </div>
     </form>
   </div>
 
-  <script src="script.js"></script>
+  <!-- <script src="script.js"></script> -->
 </body>
 </html>

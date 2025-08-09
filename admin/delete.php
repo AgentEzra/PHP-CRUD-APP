@@ -6,5 +6,5 @@ $query = "DELETE FROM user WHERE ID = '$id'";
 
 $result = mysqli_query($connect, $query);
 
-header('location: index.php');
+header('location: table.php');
 ?>

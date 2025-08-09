@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Register</title>
-  <link rel="stylesheet" href="../css/styleFront.css">
+  <link rel="stylesheet" href="./styleFront.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
@@ -12,7 +12,7 @@
 </head>
 <body>
   <div class="wrapper">
-    <form action="../backend/register.php" method="post">
+    <form  method="post">
       <h1>Register</h1>
 
       <div class="input-box">
@@ -35,7 +35,7 @@
 
       <div class="already">
         <p>Already Have An Account?
-        <a href="../index.html">Login</a></p>
+        <a href="./index.php">Login</a></p>
       </div>
     </form>
   </div>
