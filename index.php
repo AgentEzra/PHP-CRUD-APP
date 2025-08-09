@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login</title>
-  <link rel="stylesheet" href="./styleFront.css">
+  <link rel="stylesheet" href="./login/styleFront.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
@@ -30,14 +30,14 @@
     
       <div class="remfor">
         <label><input type="checkbox" name="remember"> Remember Me</label>
-        <a href="./forgotpassword.php">Forgot Password?</a>
+        <a href="./login/forgotpassword.php">Forgot Password?</a>
       </div>
 
       <button type="submit" class="login-button">LOGIN</button>
 
       <div class="donthave">
         <p>Don't Have An Account?
-        <a href="./registeraccount.php">Register</a></p>
+        <a href="./login/registeraccount.php">Register</a></p>
       </div>
     </form>
   </div>

@@ -35,7 +35,7 @@
 
       <div class="already">
         <p>Already Have An Account?
-        <a href="./index.php">Login</a></p>
+        <a href="../index.php">Login</a></p>
       </div>
     </form>
   </div>

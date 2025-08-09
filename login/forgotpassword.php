@@ -24,7 +24,7 @@
       <button type="submit" class="login-button">Send My Password</button>
 
       <div class="already">
-        <p>Already Have An Account? <a href="./index.php">Login</a></p>
+        <p>Already Have An Account? <a href="../index.php">Login</a></p>
       </div>
       
       <div class="donthave">
