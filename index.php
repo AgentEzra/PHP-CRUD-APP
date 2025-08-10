@@ -1,3 +1,45 @@
+<?php
+require './admin/connect.php';
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    // Ambil data dari POST
+    $username = $_POST['username'] ?? '';
+    $password = $_POST['password'] ?? '';
+
+    // Sanitasi input
+    $username_or_email = mysqli_real_escape_string($connect, $username);
+
+    // Query cek username/email
+    $query_sql = "SELECT * FROM user WHERE (username = ? OR email = ?)";
+
+    if ($stmt = mysqli_prepare($connect, $query_sql)) {
+        mysqli_stmt_bind_param($stmt, "ss", $username_or_email, $username_or_email);
+        mysqli_stmt_execute($stmt);
+        $result = mysqli_stmt_get_result($stmt);
+
+        if (mysqli_num_rows($result) > 0) {
+            $user = mysqli_fetch_assoc($result);
+
+            // Password plain text (tidak disarankan di production)
+            if ($password === $user['password']) {
+                header("Location: https://chess.com");
+                exit();
+            } else {
+                echo "<center><h1>Username or Password is incorrect. Please try again.</h1>
+                <button><strong><a href='index.php'>Login</a></strong></button></center>";
+            }
+        } else {
+            echo "<center><h1>Username or Email not found. Please try again.</h1>
+            <button><strong><a href='index.php'>Login</a></strong></button></center>";
+        }
+
+        mysqli_stmt_close($stmt);
+    }
+    mysqli_close($connect);
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
